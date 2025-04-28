@@ -38,10 +38,6 @@ task-management/
 └── package.json
 ```
 
-## 📸 Screenshots
-
-> _Add screenshots of your application interface and analytics dashboard._
-
 ## 🧩 Getting Started
 
 ### Prerequisites
@@ -110,6 +106,12 @@ http://localhost:5173
 ## 🤝 Contributing
 
 Contributions are welcome! Please open an issue or pull request.
+
+## Screenshots
+
+![WhatsApp Image 2025-04-28 at 12 46 35_d4aadeee](https://github.com/user-attachments/assets/5750ef95-b1ca-455c-8850-67a71b6af94c)
+![WhatsApp Image 2025-04-28 at 12 46 35_eff45008](https://github.com/user-attachments/assets/5d51cd33-b391-4591-8009-041004472b6b)
+
 
 ## 📄 License
 
