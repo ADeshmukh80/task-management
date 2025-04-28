@@ -1,46 +1,62 @@
 # Task Management System
 
-A **Task Management** web application built with **React**, **TypeScript**, and **Mantine UI**, designed to help users efficiently manage tasks with features like **analytics tracking**, **pagination**, and **task updates**.
+A **full-stack Task Management** application built with **React + Vite** on the frontend, **Node.js** on the backend, and **MongoDB** for the database.  
+It enables users to manage tasks, track analytics, and monitor productivity in an organized and efficient manner.
 
 ## 🚀 Features
 
-- 📋 **Task List**: View and manage tasks dynamically.
-- 📊 **Task Analytics**: Monitor task completion and performance using real-time metrics.
-- 🔄 **Update Tasks**: Edit existing tasks easily.
-- 📚 **Pagination**: Load tasks page by page for better performance.
-- 🛠 **Context API**: Manage analytics and task data globally across the app.
+- 📋 **Task List**: Create, update, and view tasks.
+- 📊 **Task Analytics**: Real-time performance tracking and statistics.
+- 🔄 **Update Tasks**: Modify task status, description, and details.
+- 📚 **Pagination**: Smooth task loading with page-based navigation.
+- 🛠 **Global State Management**: Handled via Context API.
+- 🌐 **REST APIs**: Node.js backend APIs for task CRUD operations.
+- 🛢️ **MongoDB**: Secure and scalable task storage.
 
 ## 🛠 Tech Stack
 
-- **Frontend**: React, TypeScript
-- **UI Components**: Mantine UI
-- **State Management**: Context API
-- **Styling**: Mantine styling utilities
+- **Frontend**: React + Vite, TypeScript, Mantine UI
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB (with Mongoose ODM)
 
 ## 📂 Project Structure
 
 ```
 task-management/
-├── public/
-├── src/
-│   ├── components/     # Reusable components (e.g., TaskTable, AnalyticsDashboard)
-│   ├── context/        # Analytics context for global state management
-│   ├── hooks/          # Custom hooks for data fetching and updating
-│   ├── pages/          # Main pages (Home, Tasks, Analytics)
-│   ├── services/       # API service functions
-│   ├── utils/          # Utility functions
-│   ├── App.tsx         # App entry point
-│   └── main.tsx        # Application bootstrap
+├── client/               # Frontend (React + Vite app)
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── hooks/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── utils/
+│   ├── index.html
+│   └── package.json
+├── server/               # Backend (Node.js + Express app)
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── config/
+│   ├── server.js
+│   └── package.json
 ├── README.md
-├── package.json
-└── tsconfig.json
+└── package.json
 ```
 
 ## 📸 Screenshots
 
-> _You can add screenshots here after uploading them to your repo for better visibility._
+> _Screenshots will be added soon showcasing dashboard, analytics, and task operations._
 
 ## 🧩 How to Run Locally
+
+### Prerequisites
+
+- Node.js (v16+)
+- npm or yarn
+- MongoDB instance (local or cloud)
+
+### Setup Instructions
 
 1. **Clone the repository:**
 
@@ -49,37 +65,53 @@ git clone https://github.com/ADeshmukh80/task-management.git
 cd task-management
 ```
 
-2. **Install dependencies:**
+2. **Install dependencies for client and server:**
 
 ```bash
+cd client
+npm install
+cd ../server
 npm install
 ```
 
-3. **Start the development server:**
+3. **Set up environment variables for server:**
+
+Create a `.env` file inside the `server/` folder:
+
+```plaintext
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+```
+
+4. **Start backend server:**
 
 ```bash
+cd server
 npm run dev
 ```
 
-4. **View in browser:**
+5. **Start frontend client:**
 
-Visit `http://localhost:5173` to view the app.
+```bash
+cd client
+npm run dev
+```
+
+6. **Access the app at:**  
+[http://localhost:5173](http://localhost:5173)
 
 ## 📈 Future Improvements
 
-- Add authentication and user roles.
-- Implement task filtering and search functionality.
-- Improve task analytics with charts.
-- Add offline support (PWA).
+- User authentication (JWT-based login and signup).
+- Task filtering, sorting, and search.
+- Real-time updates using WebSockets.
+- Role-based access control (admin, user).
 
 ## 🤝 Contributing
 
-Contributions are welcome!  
-Feel free to open issues or submit pull requests to enhance the project.
+Contributions and feedback are welcome!  
+Please open issues or submit a pull request to improve this project.
 
-## Screenshots
+## 📄 License
 
-![WhatsApp Image 2025-04-28 at 12 46 35_32dedd58](https://github.com/user-attachments/assets/dd730859-2b25-4475-9eab-8bce94fd50c7)
-![WhatsApp Image 2025-04-28 at 12 46 35_af69cfa1](https://github.com/user-attachments/assets/766b0682-1ac1-46c0-a90c-725c73d6aed1)
-
-
+This project is licensed under the [MIT License](LICENSE).
