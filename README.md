@@ -1,116 +1,115 @@
 # Task Management System
 
-A **full-stack Task Management** application built with **React + Vite** on the frontend, **Node.js** on the backend, and **MongoDB** for the database.  
-It enables users to manage tasks, track analytics, and monitor productivity in an organized and efficient manner.
+A full-stack **Task Management Application** built using **React + Vite** (frontend), **Node.js + Express** (backend), and **MongoDB** (database).  
+This app allows users to manage tasks and track their performance through analytics and pagination features.
 
 ## 🚀 Features
 
-- 📋 **Task List**: Create, update, and view tasks.
-- 📊 **Task Analytics**: Real-time performance tracking and statistics.
-- 🔄 **Update Tasks**: Modify task status, description, and details.
-- 📚 **Pagination**: Smooth task loading with page-based navigation.
-- 🛠 **Global State Management**: Handled via Context API.
-- 🌐 **REST APIs**: Node.js backend APIs for task CRUD operations.
-- 🛢️ **MongoDB**: Secure and scalable task storage.
+- Create, update, and delete tasks
+- View task performance analytics
+- Pagination for efficient task loading
+- State management using React Context API
+- RESTful backend API with Express
 
 ## 🛠 Tech Stack
 
-- **Frontend**: React + Vite, TypeScript, Mantine UI
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB (with Mongoose ODM)
+- **Frontend**: React + Vite
+- **Backend**: Node.js, Express
+- **Database**: MongoDB
 
 ## 📂 Project Structure
 
 ```
 task-management/
-├── client/               # Frontend (React + Vite app)
-│   ├── src/
-│   │   ├── components/
-│   │   ├── context/
-│   │   ├── hooks/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   └── utils/
-│   ├── index.html
-│   └── package.json
-├── server/               # Backend (Node.js + Express app)
+├── client/          # Frontend React application
+│   └── src/
+│       ├── components/
+│       ├── context/
+│       ├── pages/
+│       ├── services/
+│       └── utils/
+├── server/          # Backend Node.js application
+│   ├── config/
 │   ├── controllers/
 │   ├── models/
 │   ├── routes/
-│   ├── config/
-│   ├── server.js
-│   └── package.json
+│   └── server.js
 ├── README.md
 └── package.json
 ```
 
 ## 📸 Screenshots
 
-> _Screenshots will be added soon showcasing dashboard, analytics, and task operations._
+> _Add screenshots of your application interface and analytics dashboard._
 
-## 🧩 How to Run Locally
+## 🧩 Getting Started
 
 ### Prerequisites
 
 - Node.js (v16+)
-- npm or yarn
-- MongoDB instance (local or cloud)
+- MongoDB
+- npm
 
 ### Setup Instructions
 
-1. **Clone the repository:**
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/ADeshmukh80/task-management.git
 cd task-management
 ```
 
-2. **Install dependencies for client and server:**
+2. Install client dependencies:
 
 ```bash
 cd client
 npm install
+```
+
+3. Install server dependencies:
+
+```bash
 cd ../server
 npm install
 ```
 
-3. **Set up environment variables for server:**
-
-Create a `.env` file inside the `server/` folder:
+4. Create a `.env` file inside `server/` and add:
 
 ```plaintext
 MONGO_URI=your_mongodb_connection_string
 PORT=5000
 ```
 
-4. **Start backend server:**
+5. Start the backend server:
 
 ```bash
 cd server
 npm run dev
 ```
 
-5. **Start frontend client:**
+6. Start the frontend server:
 
 ```bash
 cd client
 npm run dev
 ```
 
-6. **Access the app at:**  
-[http://localhost:5173](http://localhost:5173)
+7. Access the application at:
 
-## 📈 Future Improvements
+```
+http://localhost:5173
+```
 
-- User authentication (JWT-based login and signup).
-- Task filtering, sorting, and search.
-- Real-time updates using WebSockets.
-- Role-based access control (admin, user).
+## 📈 Future Enhancements
+
+- User authentication (Login/Signup)
+- Search, filter, and sort tasks
+- Real-time updates using WebSocket
+- Better UI/UX improvements
 
 ## 🤝 Contributing
 
-Contributions and feedback are welcome!  
-Please open issues or submit a pull request to improve this project.
+Contributions are welcome! Please open an issue or pull request.
 
 ## 📄 License
 
